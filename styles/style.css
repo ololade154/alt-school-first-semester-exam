@@ -85,8 +85,7 @@ html {
 }
 
 #mobile-menu {
-  width: 75%;
-  max-width: 320px;
+  width: 60%;
   height: 100dvh;
   margin: 0;
   inset: 0 0 0 auto;
