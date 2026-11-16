@@ -10,7 +10,7 @@
     <header>
       <nav class="navbar">
         <section>
-          <h1 class="logo">chatter</h1>
+          <h1><a href="#" class="logo">Chatter</a></h1>
         </section>
         <section>
           <ul class="nav-links">
@@ -25,10 +25,42 @@
           <button class="button">Sign up</button>
         </section>
       </nav>
-      <nav class="mobile-nav">
-        <section>
-          <h1 class="mobile-logo">chatter</h1>
-        </section>
+
+      <nav class="mobile-nav" aria-label="Mobile">
+        <div class="mobile-nav-bar">
+          <a href="#" class="mobile-logo">chatter</a>
+          <button
+            type="button"
+            popovertarget="mobile-menu"
+            aria-label="Open menu"
+            class="menu-icon"
+          >
+            <img src="icons/menu.svg" alt="" />
+          </button>
+        </div>
+
+        <div id="mobile-menu" popover>
+          <button
+            type="button"
+            popovertarget="mobile-menu"
+            popovertargetaction="hide"
+            class="menu-close"
+          >
+            <img src="icons/close.svg" alt="" />
+          </button>
+
+          <ul class="mobile-nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+
+          <div class="mobile-nav-actions">
+            <button type="button" class="login-button">Login</button>
+            <button type="button" class="button">Sign up</button>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="main">
@@ -128,6 +160,67 @@
           </div>
         </div>
       </section>
+      <section class="cta-section">
+        <div class="cta-images">
+          <img
+            src="/images/avatar-1.svg"
+            alt=""
+            class="cta-avatar cta-avatar-1"
+          />
+          <img
+            src="/images/avatar-2.svg"
+            alt=""
+            class="cta-avatar cta-avatar-2"
+          />
+          <img
+            src="/images/avatar-3.svg"
+            alt=""
+            class="cta-avatar cta-avatar-3"
+          />
+        </div>
+
+        <div class="cta-content">
+          <h2 class="cta-title">
+            Write, read and connect <br />with great minds on chatter
+          </h2>
+          <p class="cta-description">
+            Share people your great ideas, and also read write-ups based on your
+            interests. connect with people of same interests and goals
+          </p>
+          <button class="button">Get started</button>
+        </div>
+      </section>
     </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <a href="#" class="logo">chatter</a>
+
+        <nav class="footer-column" aria-label="Explore">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">community</a></li>
+            <li><a href="#">Trending blogs</a></li>
+            <li><a href="#">Chatter for teams</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column" aria-label="Support">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Support docs</a></li>
+            <li><a href="#">Join slack</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-column" aria-label="Official blog">
+          <h3>Official blog</h3>
+          <ul>
+            <li><a href="#">Official blog</a></li>
+            <li><a href="#">Engineering blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
